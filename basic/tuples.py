@@ -20,3 +20,20 @@ x=tuple(y)
 print(x)
 
 del x # deletes the x
+
+#unpacking of the tuples 
+fruits=("apple","banana","cherry")
+(green,yellow,red)=fruits
+# green is apple
+# yellow is banana
+
+fruits=("apple","banana","cherry","strawberry","raspberry")
+(green,yellow,*red)=fruits # * is used to assign the rest of the values to the last variable
+print(red)
+
+#join in tuples
+tuple1=("a","b","c")
+tuple2=(1,2,3)
+tuple3=tuple1+tuple2
+print(tuple3)
+print(tuple1*2)
