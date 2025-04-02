@@ -1,0 +1,14 @@
+.venv\Scripts\activate  in root directory
+
+python -m ensurepip --upgrade  // to install pip 
+
+add 'tailwind' in install apps in settings.py 
+
+run command python manage.py tailwind init
+
+dont add theme just press enter
+now add app theme in settings.py
+
+TAILWIND_APP_NAME='theme'
+INTERNAL_IPS=['127.0.0.1']
+add this after install apps in settings.py

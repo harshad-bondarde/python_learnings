@@ -1,13 +1,12 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'styles.css' %}">
-    <title>HELLO</title>
-</head>
-<body>
-    HELLO
-</body>
-</html>
+{% extends "layout.html" %}  
+{% comment %} this function finds where layout.html is located in entire directory {% endcomment %}
+
+{% comment %} think about which variables you want to replace only {% endcomment %}
+
+{% block title %}
+    Home Page
+{% endblock  %}
+
+{% block  content%}
+    <h1>Chai aur Code | Home page</h1>
+{% endblock  %}
